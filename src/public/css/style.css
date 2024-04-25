@@ -50,7 +50,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1255px) {
   .contenedor-tarjetas {
     display: grid;
     grid-template-areas: 
