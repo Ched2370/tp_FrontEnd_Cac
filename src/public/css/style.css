@@ -1,0 +1,170 @@
+:root {
+  /* --bg-colors*/
+  --princpial-ligth: #efefd0;
+  --principal-dark: #252422;
+  --secundaria-red: crimson;
+}
+
+body {
+  background-color: var(--principal-dark);
+}
+
+header  {
+  background-color: var(--secundaria-red);
+  top: 35px;
+  z-index: 1;
+}
+.ct-ligth {
+  color: var(--princpial-ligth);
+}
+
+section {
+  background-color: #fff;
+
+}
+
+#banner {
+  width: 100%;
+  height: 100%;
+  background: #fff url('../img/movies/banner-bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+a,
+li {
+  color: var(--princpial-ligth);
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--secundaria-red);
+  padding: 2rem;
+}
+
+
+@media screen and (min-width: 992px)  {
+  .contenedor-menu{
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-areas: 
+    'tarj1 tarj2 tarj3'
+    'tarj4 tarj5 tarj6';
+  }
+  .tarj-1 {
+    grid-area: tarj1;
+  }
+  .tarj-2 {
+    grid-area: tarj2;
+  }
+  .tarj-3 {
+    grid-area: tarj3;
+  }
+  .tarj-4 {
+    grid-area: tarj4;
+  }
+  .tarj-5 {
+    grid-area: tarj5;
+  }
+  .tarj-6 {
+    grid-area: tarj6;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-areas: 
+    'tarj1 tarj2'
+    'tarj3 tarj4'
+    'tarj5 tarj6';
+  }
+  .tarj-1 {
+    grid-area: tarj1;
+  }
+  .tarj-2 {
+    grid-area: tarj2;
+  }
+  .tarj-3 {
+    grid-area: tarj3;
+  }
+  .tarj-4 {
+    grid-area: tarj4;
+  }
+  .tarj-5 {
+    grid-area: tarj5;
+  }
+  .tarj-6 {
+    grid-area: tarj6;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedor-tarjetas {
+    display: grid;
+    grid-template-areas: 
+    'tarj1'
+    'tarj2'
+    'tarj3' 
+    'tarj4'
+    'tarj5' 
+    'tarj6';
+  }
+  .tarj-1 {
+    grid-area: tarj1;
+  }
+  .tarj-2 {
+    grid-area: tarj2;
+  }
+  .tarj-3 {
+    grid-area: tarj3;
+  }
+  .tarj-4 {
+    grid-area: tarj4;
+  }
+  .tarj-5 {
+    grid-area: tarj5;
+  }
+  .tarj-6 {
+    grid-area: tarj6;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  li,
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+  iframe, .poster {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  li {
+    padding: 2rem;
+    text-align: center;
+  }
+}
